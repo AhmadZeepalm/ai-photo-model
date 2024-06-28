@@ -1,0 +1,124 @@
+.frontpage_training_example {
+  width: calc(100% - 14px - 14px);
+  clear: both;
+  max-width: 1000px;
+  margin: 14px auto;
+  height: 600px;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .frontpage_training_example {
+    height: 60vw;
+  }
+}
+.frontpage_training_example_input {
+  width: calc(50% - 81px);
+  overflow: hidden;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.frontpage_training_example_input img {
+  width: calc(50% - 14px);
+  height: calc(50% - 14px);
+  object-fit: cover;
+  margin: 7px;
+  border: 1px solid var(--photo-border-color);
+  border-radius: 12px;
+}
+
+.frontpage_training_example_output {
+  overflow: hidden;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: calc(50% - 81px);
+}
+.frontpage_training_example_output img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--photo-border-color);
+  border-radius: 12px;
+  cursor: zoom-in;
+}
+.frontpage_training_example_output .top_right_label {
+  background: #2bde73;
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 8px;
+  padding: 5px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 6px;
+  text-transform: uppercase;
+}
+.frontpage_training_example_output img:hover {
+  opacity: 0.75;
+}
+.frontpage_training_example_arrow {
+  z-index: 2;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  transform: scaleY(-1) translateX(-50%) translateY(50%) rotate(-41deg);
+  margin-left: -13px;
+  filter: invert(1);
+}
+@media (max-width: 600px) {
+  .frontpage_training_example_input img {
+    height: auto;
+  }
+  .frontpage_training_example_output img {
+    width: calc(100% - 14px);
+    height: auto;
+    margin: 14px auto;
+  }
+  .frontpage_training_example_arrow,
+  .frontpage_training_example_output,
+  .frontpage_training_example_input {
+    width: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+  }
+  .frontpage_training_example_arrow {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    transform: rotate(24deg);
+  }
+  .frontpage_training_example {
+    height: auto;
+  }
+}
+
+.showcase h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.showcase p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.showcase {
+  min-height: 100vh;
+}
